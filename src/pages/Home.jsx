@@ -11,7 +11,7 @@ export default function Home() {
                         <h1 className="font-second text-4xl md:text-5xl font-bold mb-4 overflow-visible whitespace-nowrap">
                             УМНЫЕ ПРОТЕЗЫ,
                         </h1>
-                        <h2 className="font-primary text-3xl md:text-3xl mb-8">
+                        <h2 className="font-primary text-3xl mb-8">
                             ДОСТУПНЫЕ КАЖДОМУ
                         </h2>
                         <button className="bg-white hover:bg-hover text-black font-primary text-xl py-2 px-4 rounded-4xl">
@@ -48,23 +48,23 @@ export default function Home() {
             </section>
 
             {/* Mission Section */}
-            <section className="bg-black text-white py-16">
-                <div className="container mx-auto px-4">
-                    <h2 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-8">
+            <section className="gradient_section text-white py-16">
+                <div className="container mx-auto">
+                    <h2 className="text-4xl md:text-5xl font-bold font-second text-hover">
                         ЦЕЛЬ ПРОЕКТА
                     </h2>
-                    <p className="text-xl mb-8">
+                    <p className="w-2/3 text-3xl my-8 font-primary">
                         Наша цель заключается в улучшении качества жизни людей,
                         нуждающихся в вспомогательных технологиях, путем
                         разработки доступных и функциональных моделей протезов
                         рук.
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div className="bg-gray-800 p-6 rounded shadow-md">
-                            <h3 className="text-2xl font-bold mb-4">
+                        <div className="bg-card p-6 rounded-4xl shadow-md">
+                            <h3 className="text-2xl font-bold mb-4 font-second">
                                 01 ФУНКЦИОНАЛЬНОСТЬ
                             </h3>
-                            <p>
+                            <p className="font-primary text-2xl">
                                 Мы считаем, что современный протез — это
                                 инструмент. И этот инструмент должен справляться
                                 с самыми разными задачами. Грейферная кисть с
@@ -72,11 +72,11 @@ export default function Home() {
                                 захват, простоту управления и долговечность.
                             </p>
                         </div>
-                        <div className="bg-gray-800 p-6 rounded shadow-md">
-                            <h3 className="text-2xl font-bold mb-4">
+                        <div className="bg-card p-6 rounded-4xl shadow-md">
+                            <h3 className="text-2xl font-bold mb-4 font-second">
                                 02 ДОСТУПНОСТЬ
                             </h3>
-                            <p>
+                            <p className="font-primary text-2xl">
                                 Мы стремимся создать протез, который будет
                                 доступнее существующих решений. Оптимизация
                                 конструкции, выбор материалов и продуманный
@@ -84,11 +84,11 @@ export default function Home() {
                                 производство и обслуживание.
                             </p>
                         </div>
-                        <div className="bg-gray-800 p-6 rounded shadow-md">
-                            <h3 className="text-2xl font-bold mb-4">
+                        <div className="bg-card p-6 rounded-4xl shadow-md">
+                            <h3 className="text-2xl font-bold mb-4 font-second">
                                 03 ЭСТЕТИЧНОСТЬ
                             </h3>
-                            <p>
+                            <p className="font-primary text-2xl">
                                 Протез должен соответствовать не только
                                 функциональным, но и эстетическим требованиям
                                 пользователя. Быстросъемный модуль запястья
