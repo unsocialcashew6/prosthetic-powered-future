@@ -62,9 +62,9 @@ export default function Home() {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div className="bg-card p-6 rounded-4xl shadow-md">
                             <h3 className="text-2xl font-bold mb-4 font-second">
-                                01 ФУНКЦИОНАЛЬНОСТЬ
+                                <span className="text-4xl">01</span> ФУНКЦИОНАЛЬНОСТЬ
                             </h3>
-                            <p className="font-primary text-2xl">
+                            <p className="font-primary text-xl mt-5 px-2.5">
                                 Мы считаем, что современный протез — это
                                 инструмент. И этот инструмент должен справляться
                                 с самыми разными задачами. Грейферная кисть с
@@ -74,9 +74,9 @@ export default function Home() {
                         </div>
                         <div className="bg-card p-6 rounded-4xl shadow-md">
                             <h3 className="text-2xl font-bold mb-4 font-second">
-                                02 ДОСТУПНОСТЬ
+                                <span className="text-4xl">02</span> ДОСТУПНОСТЬ
                             </h3>
-                            <p className="font-primary text-2xl">
+                            <p className="font-primary text-xl px-2.5">
                                 Мы стремимся создать протез, который будет
                                 доступнее существующих решений. Оптимизация
                                 конструкции, выбор материалов и продуманный
@@ -86,9 +86,9 @@ export default function Home() {
                         </div>
                         <div className="bg-card p-6 rounded-4xl shadow-md">
                             <h3 className="text-2xl font-bold mb-4 font-second">
-                                03 ЭСТЕТИЧНОСТЬ
+                                <span className="text-4xl">03</span> ЭСТЕТИЧНОСТЬ
                             </h3>
-                            <p className="font-primary text-2xl">
+                            <p className="font-primary text-xl px-2.5">
                                 Протез должен соответствовать не только
                                 функциональным, но и эстетическим требованиям
                                 пользователя. Быстросъемный модуль запястья
@@ -97,15 +97,16 @@ export default function Home() {
                             </p>
                         </div>
                     </div>
+                    <h2 className="mt-10 text-4xl md:text-5xl font-bold font-second text-hover">
+                        МЫ — ARTEVO
+                    </h2>
                 </div>
             </section>
 
             {/* Team Section */}
             <section className="bg-gray-900 text-white py-16">
                 <div className="container mx-auto px-4">
-                    <h2 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-8">
-                        МЫ — ARTEVO
-                    </h2>
+                    
                     <p className="text-xl mb-8">
                         Изначально студенческий проект Кубанского
                         государственного университета, в котором объединились
