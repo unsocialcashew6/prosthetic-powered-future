@@ -26,9 +26,8 @@
     --font-second: "Wadik", "sans-serif";
 
     --color-primary: #1d1d1b;
-    --color-second: #1d1d1b;
+    --color-second: #333333;
     --color-hover: #fff9b3;
-    --color-card: #333333;
 }
 
 .overlay {
@@ -46,4 +45,8 @@
 
 .gradient_section {
     background: linear-gradient(180deg,rgba(2, 2, 2, 1) 0%, rgba(33, 33, 31, 1) 100%);
+}
+
+.gradient_section_revers {
+    background: linear-gradient(360deg,rgba(2, 2, 2, 1) 0%, rgba(28, 28, 26, 1) 100%);
 }

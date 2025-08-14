@@ -14,7 +14,7 @@ export default function Home() {
                         <h2 className="font-primary text-3xl mb-8">
                             ДОСТУПНЫЕ КАЖДОМУ
                         </h2>
-                        <button className="bg-white hover:bg-hover text-black font-primary text-xl py-2 px-4 rounded-4xl">
+                        <button className="bg-white hover:bg-hover text-black text-xl font-primary font-[600] py-2 px-4 rounded-4xl">
                             ПОДРОБНЕЕ
                         </button>
                     </div>
@@ -60,9 +60,10 @@ export default function Home() {
                         рук.
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div className="bg-card p-6 rounded-4xl shadow-md">
+                        <div className="bg-second p-6 rounded-4xl shadow-md">
                             <h3 className="text-2xl font-bold mb-4 font-second">
-                                <span className="text-4xl">01</span> ФУНКЦИОНАЛЬНОСТЬ
+                                <span className="text-4xl">01</span>{" "}
+                                ФУНКЦИОНАЛЬНОСТЬ
                             </h3>
                             <p className="font-primary text-xl mt-5 px-2.5">
                                 Мы считаем, что современный протез — это
@@ -72,7 +73,7 @@ export default function Home() {
                                 захват, простоту управления и долговечность.
                             </p>
                         </div>
-                        <div className="bg-card p-6 rounded-4xl shadow-md">
+                        <div className="bg-second p-6 rounded-4xl shadow-md">
                             <h3 className="text-2xl font-bold mb-4 font-second">
                                 <span className="text-4xl">02</span> ДОСТУПНОСТЬ
                             </h3>
@@ -84,9 +85,10 @@ export default function Home() {
                                 производство и обслуживание.
                             </p>
                         </div>
-                        <div className="bg-card p-6 rounded-4xl shadow-md">
+                        <div className="bg-second p-6 rounded-4xl shadow-md">
                             <h3 className="text-2xl font-bold mb-4 font-second">
-                                <span className="text-4xl">03</span> ЭСТЕТИЧНОСТЬ
+                                <span className="text-4xl">03</span>{" "}
+                                ЭСТЕТИЧНОСТЬ
                             </h3>
                             <p className="font-primary text-xl px-2.5">
                                 Протез должен соответствовать не только
@@ -103,11 +105,19 @@ export default function Home() {
                 </div>
             </section>
 
+            {/* Team Photo */}
+            <section className="bg-second text-white py-16">
+                <div className="container mx-auto flex justify-center content-center">
+                    <h2 className="text-xl font-normal font-primary text-white">
+                        ОБЩЕЕ ФОТО КОМАНДЫ
+                    </h2>
+                </div>
+            </section>
+
             {/* Team Section */}
-            <section className="bg-gray-900 text-white py-16">
+            <section className="bg-primary text-white py-16">
                 <div className="container mx-auto px-4">
-                    
-                    <p className="text-xl mb-8">
+                    <p className="px-16 w-full text-xl mt-8 font-primary">
                         Изначально студенческий проект Кубанского
                         государственного университета, в котором объединились
                         люди с разными компетенциями. Команда состоит из
@@ -117,122 +127,143 @@ export default function Home() {
                         — переосмыслить современные протезы и сделать их
                         доступнее.
                     </p>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        <div className="bg-gray-800 p-6 rounded shadow-md">
+
+                    <div className="w-full border-1 border-[#a1a19f] my-16"></div>
+
+                    <div className="grid grid-cols-2 gap-8">
+                        <div className="flex flex-row p-6">
                             <img
                                 src="https://via.placeholder.com/150"
                                 alt="Team Member"
                                 className="w-16 h-16 rounded-full mb-4"
                             />
-                            <h3 className="text-2xl font-bold mb-2">
-                                ДРАГУНОВ ДАНИИЛ
-                            </h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetuer
-                                adipiscing elit. Aenean commodo ligula eget
-                                dolor.
-                            </p>
+                            <div className="ml-5">
+                                <h3 className="text-3xl font-bold font-second text-hover mb-2">
+                                    ДРАГУНОВ ДАНИИЛ
+                                </h3>
+                                <p className="mt-5">
+                                    Lorem ipsum dolor sit amet, consectetuer
+                                    adipiscing elit. Aenean commodo ligula eget
+                                    dolor.
+                                </p>
+                            </div>
                         </div>
-                        <div className="bg-gray-800 p-6 rounded shadow-md">
+                        <div className="flex flex-row p-6">
                             <img
                                 src="https://via.placeholder.com/150"
                                 alt="Team Member"
                                 className="w-16 h-16 rounded-full mb-4"
                             />
-                            <h3 className="text-2xl font-bold mb-2">
-                                АНДРЕЙ ИВАНИСОВ
-                            </h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetuer
-                                adipiscing elit. Aenean commodo ligula eget
-                                dolor.
-                            </p>
+                            <div className="ml-5">
+                                <h3 className="text-3xl font-bold font-second text-hover mb-2">
+                                    АНДРЕЙ ИВАНИСОВ
+                                </h3>
+                                <p className="mt-5">
+                                    Lorem ipsum dolor sit amet, consectetuer
+                                    adipiscing elit. Aenean commodo ligula eget
+                                    dolor.
+                                </p>
+                            </div>
                         </div>
-                        <div className="bg-gray-800 p-6 rounded shadow-md">
+                        <div className="flex flex-row p-6">
                             <img
                                 src="https://via.placeholder.com/150"
                                 alt="Team Member"
                                 className="w-16 h-16 rounded-full mb-4"
                             />
-                            <h3 className="text-2xl font-bold mb-2">
-                                ТОПОРКОВ НИКИТА
-                            </h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetuer
-                                adipiscing elit.
-                            </p>
+                            <div className="ml-5">
+                                <h3 className="text-3xl font-bold font-second text-hover mb-2">
+                                    ТОПОРКОВ НИКИТА
+                                </h3>
+                                <p className="mt-5">
+                                    Lorem ipsum dolor sit amet, consectetuer
+                                    adipiscing elit. Aenean commodo ligula eget
+                                    dolor.
+                                </p>
+                            </div>
                         </div>
-                        <div className="bg-gray-800 p-6 rounded shadow-md">
+                        <div className="flex flex-row p-6">
                             <img
                                 src="https://via.placeholder.com/150"
                                 alt="Team Member"
                                 className="w-16 h-16 rounded-full mb-4"
                             />
-                            <h3 className="text-2xl font-bold mb-2">
-                                ГОРБУШИН АРСЕНИЙ
-                            </h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetuer
-                                adipiscing elit.
-                            </p>
+                            <div className="ml-5">
+                                <h3 className="text-3xl font-bold font-second text-hover mb-2">
+                                    ГОРБУШИН АРСЕНИЙ
+                                </h3>
+                                <p className="mt-5">
+                                    Lorem ipsum dolor sit amet, consectetuer
+                                    adipiscing elit. Aenean commodo ligula eget
+                                    dolor.
+                                </p>
+                            </div>
                         </div>
-                        <div className="bg-gray-800 p-6 rounded shadow-md">
+                        <div className="flex flex-row p-6">
                             <img
                                 src="https://via.placeholder.com/150"
                                 alt="Team Member"
                                 className="w-16 h-16 rounded-full mb-4"
                             />
-                            <h3 className="text-2xl font-bold mb-2">
-                                КОНОВАЛОВА СОФЬЯ
-                            </h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetuer
-                                adipiscing elit. Aenean commodo ligula eget
-                                dolor.
-                            </p>
+                            <div className="ml-5">
+                                <h3 className="text-3xl font-bold font-second text-hover mb-2">
+                                    КОНОВАЛОВА СОФЬЯ
+                                </h3>
+                                <p className="mt-5">
+                                    Lorem ipsum dolor sit amet, consectetuer
+                                    adipiscing elit. Aenean commodo ligula eget
+                                    dolor.
+                                </p>
+                            </div>
                         </div>
-                        <div className="bg-gray-800 p-6 rounded shadow-md">
+                        <div className="flex flex-row p-6">
                             <img
                                 src="https://via.placeholder.com/150"
                                 alt="Team Member"
                                 className="w-16 h-16 rounded-full mb-4"
                             />
-                            <h3 className="text-2xl font-bold mb-2">
-                                КОНОВАЛОВА АНАСТАСИЯ
-                            </h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetuer
-                                adipiscing elit. Aenean commodo ligula eget
-                                dolor.
-                            </p>
+                            <div className="ml-5">
+                                <h3 className="text-3xl font-bold font-second text-hover mb-2">
+                                    КОНОВАЛОВА АНАСТАСИЯ
+                                </h3>
+                                <p className="mt-5">
+                                    Lorem ipsum dolor sit amet, consectetuer
+                                    adipiscing elit. Aenean commodo ligula eget
+                                    dolor.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* Contact Section */}
-            <section className="bg-black text-white py-16">
+            <section className="gradient_section_revers text-white py-16">
+              <div className="container mx-auto items-center space-y-8 md:space-y-0">
+                <div className="mx-4 w-full border-1 border-[#a1a19f]"></div>
+              </div>
                 <div className="container mx-auto px-4 flex flex-col md:flex-row items-center space-y-8 md:space-y-0">
-                    <div className="w-full md:w-1/2">
-                        <h2 className="text-4xl md:text-5xl font-bold text-yellow-400 mb-4">
+                    <div className="w-full ml-16">
+                        <p className="w-4/5  text-3xl font-normal font-primary text-white mb-4">
                             ХОТИТЕ ПОМОЧЬ ПРОЕКТУ ИЛИ ДАТЬ СОВЕТ?
-                        </h2>
-                        <button className="bg-white hover:bg-gray-100 text-black font-bold py-2 px-4 rounded">
+                        </p>
+                        <h2 className="text-7xl w-2/3 font-normal font-primary text-hover mb-4">СВЯЖИТЕСЬ С НАМИ!</h2>
+                        <button className="bg-white hover:bg-hover text-black text-xl font-primary font-[600] w-2/4 py-2 px-4 rounded-4xl">
                             КОНТАКТЫ
                         </button>
                     </div>
-                    <div className="w-full md:w-1/2">
+                    <div className="w-full flex justify-center">
                         <img
-                            src="https://via.placeholder.com/600x600?text=Протез+с+розой"
-                            alt="Протез с розой"
-                            className="w-full h-auto"
+                            src="./img/1.png"
+                            alt="Грейферная кисть «ФАЛАНГА - 2»"
+                            className="w-2/3 rotate-180"
                         />
                     </div>
                 </div>
             </section>
 
             {/* Footer */}
-            <footer className="bg-gray-800 text-white py-8">
+            <footer className="bg-second text-white py-8">
                 <div className="container mx-auto px-4 flex justify-between items-center">
                     <div>
                         <img
@@ -240,10 +271,10 @@ export default function Home() {
                             alt="Logo"
                             className="h-10"
                         />
-                        <p className="text-sm mt-2">2025 Артэво Бионикс</p>
+                        <p className="text-sm mt-2 font-primary text-white">2025 Артэво Бионикс</p>
                     </div>
                     <div>
-                        <p className="text-sm">
+                        <p className="text-sm font-primary text-white">
                             ООО «АРТЭВО БИОНИКС» (ОГРН 4167893778839) 35000
                             <br />
                             г. Краснодар, ул. Селезнева 3478
