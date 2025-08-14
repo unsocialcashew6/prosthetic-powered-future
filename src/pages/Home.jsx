@@ -27,7 +27,7 @@ export default function Home() {
                             }}
                         ></div>
                         <img
-                            src="./src/assets/img/1.png"
+                            src="./img/1.png"
                             alt="Грейферная кисть «ФАЛАНГА - 2»"
                             className="w-full h-full"
                         />
