@@ -50,3 +50,14 @@
 .gradient_section_revers {
     background: linear-gradient(360deg,rgba(2, 2, 2, 1) 0%, rgba(28, 28, 26, 1) 100%);
 }
+
+.clip-path-1 {
+    clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+}
+
+.clip-path-2 {
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+}
+.clip-path-3 {
+    clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
+}

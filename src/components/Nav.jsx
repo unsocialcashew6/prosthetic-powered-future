@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Nav() {
     return (
@@ -18,31 +18,39 @@ export default function Nav() {
             {/* Меню */}
             <ul className="flex space-x-16 text-white">
                 <li>
-                    <Link to="/about" className="hover:text-hover font-primary text-xl">
+                    <NavLink to="/about" className={({ isActive }) =>
+                        `hover:text-hover font-primary text-xl ${isActive ? 'pb-2 border-b-2 border-hover' : ''}`
+                    }>
                         О ПРОЕКТЕ
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="/news" className="hover:text-hover font-primary text-xl">
+                    <NavLink to="/news" className={({ isActive }) =>
+                        `hover:text-hover font-primary text-xl ${isActive ? 'pb-2 border-b-2 border-hover' : ''}`
+                    }>
                         НОВОСТИ
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="/company" className="hover:text-hover font-primary text-xl">
+                    <NavLink to="/company" className={({ isActive }) =>
+                        `hover:text-hover font-primary text-xl ${isActive ? 'pb-2 border-b-2 border-hover' : ''}`
+                    }>
                         КОМПАНИЯ
-                    </Link>
+                    </NavLink>
                 </li>
                 <li>
-                    <Link to="/contacts" className="hover:text-hover font-primary text-xl">
+                    <NavLink to="/contacts" className={({ isActive }) =>
+                        `hover:text-hover font-primary text-xl ${isActive ? 'pb-2 border-b-2 border-hover' : ''}`
+                    }>
                         КОНТАКТЫ
-                    </Link>
+                    </NavLink>
                 </li>
             </ul>
 
             {/* Кнопка заявки */}
-            <button className="bg-white hover:bg-hover text-black text-xl font-primary font-[600] py-2 px-4 rounded-4xl">
+            <NavLink to="/submit" className="bg-white hover:bg-hover text-black text-xl font-primary font-[600] py-2 px-4 rounded-4xl">
                 ОСТАВИТЬ ЗАЯВКУ
-            </button>
+            </NavLink>
         </nav>
     );
 }

@@ -1,11 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav";
-import Home from "./pages/Home"; // Импортируйте Home.jsx
+import Home from "./pages/Home";
 import About from "./pages/About";
 import Company from "./pages/Company";
 import Contacts from "./pages/Contacts";
 import News from "./pages/News";
+import Submit from "./pages/Submit";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/company" element={<Company />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/news" element={<News />} />
+          <Route path="/submit" element={<Submit />} />
         </Routes>
       </div>
     </Router>
